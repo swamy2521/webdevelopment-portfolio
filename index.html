@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Full-Width Comparison Slider</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Bootstrap 5 Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#abtus">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whyus">Why us?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#masterplan">Master plan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactus">Contact us</a></li>
+                </ul>
+                <a href="tel:+1234567890" class="btn btn-custom d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                    <span class="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center" style="width: 30px; height: 30px;">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Full-width Comparison Slider -->
+    <section id="comparison">
+        <figure>
+            <div id="handle"></div>
+            <div id="divisor"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+    </section>
+
+
+ 
+        <div class="container-fluid text-center  pt-5" id="abtus">
+            <div class="d-flex justify-content-center align-items-center mb-2">
+                <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Made for<br> Moments<br> That Matter</p>
+              </div>
+                
+                
+        
+                <!-- Row with 6 Columns inside col-10 -->
+                <div class="row justify-content-center text-center pt-4">
+                    <div class="col-12 col-md-10 d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4">
+                        <!-- Feature 1 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/integrated-township.png" class="feature-icon">
+                            <p class="mt-2">Integrated<br> Township</p>
+                        </div>
+                        <div class="divider d-none d-md-block"></div>
+                
+                        <!-- Feature 2 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/land.png" class="feature-icon">
+                            <p class="mt-2">30<br> Acres of Land</p>
+                        </div>
+                        <div class="divider d-none d-md-block"></div>
+                
+                        <!-- Feature 3 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/residential-plots.png" class="feature-icon">
+                            <p class="mt-2">389 <br> Residential Plots</p>
+                        </div>
+                        <div class="divider d-none d-md-block"></div>
+                
+                        <!-- Feature 4 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/3bhk-villas.png" class="feature-icon">
+                            <p class="mt-2">Luxurious<br> 3 BHK Villas</p>
+                        </div>
+                        <div class="divider d-none d-md-block"></div>
+                
+                        <!-- Feature 5 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/amenities.png" class="feature-icon">
+                            <p class="mt-2">20+ <br> World-class Amenities</p>
+                        </div>
+                        <div class="divider d-none d-md-block"></div>
+                
+                        <!-- Feature 6 -->
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/icons/sqft.png" class="feature-icon">
+                            <p class="mt-2">1200 sq ft <br> Onwards</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+           
+            <!-- Paragraph -->
+            <p class="para px-5 pt-2">Situated in the heart of Dharwad city, Aurora Hills is one of the premium township destinations for anyone looking to own a dream home in Dharwad. If you are searching for a plot for sale in Hubli Dharwad or property for sale in Dharwad, Aurora Hills offers the ideal choice. Situated along the National Highway NH-4, the strategic location of this township provides convenient and quick access to Hubli-Dharwad Twin Smart City. This makes it a prime destination for those looking for plots for sale in Dharwad or Hubli plots for sale.<a href="" class="fw-bold rdmr" data-bs-toggle="modal" data-bs-target="#myModalabt">READ MORE</a></p>
+    
+                
+                    <button class="btn btn-custom1 d-inline-flex align-items-center mt-2 mb-5" >
+                       Enquire Now
+                    </button>
+                
+    
+                   
+        </div>
+        <div class="container-fluid pb-5 ps-md-4 ps-lg-5">
+            <!-- <video class="w-100" autoplay loop muted playsinline>
+                <source src="images/abt-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <iframe width="100%" height="315" 
+    src="https://www.youtube.com/embed/9JTRyvP0dw4?si=CjrqRfQdKwskxGVm?autoplay=1&mute=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+        </div>
+   
+
+
+
+
+
+
+   
+
+    <section>
+      
+    </section>
+
+    <section style="background-color: #f5f5f5;" class="py-5" id="whyus">
+        <div class="container-fluid ps-md-4 ps-lg-5">
+            <div class="row">
+                
+                <!-- Left Content Section (Text, Logo, Headline, Paragraph, Button) -->
+                <div class="col-md-5 d-flex flex-column justify-content-center align-items-start px-3">
+                    <div class="d-flex align-items-center mb-3">
+                        
+                        <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+                        <p class="mb-0 mx-2 text-start sbhdln text-uppercase">Life here is<br> worth it!</p>
+                        
+                    </div>
+                   
+        
+        
+                    <!-- Paragraph -->
+                    <p class="para">
+                        
+Aurora Hills, plots in Dharwad are perfectly situated to offer you the best of nature, culture, and urban convenience. Whether you crave a beach getaway, historic exploration, or city amenities, everything is just a short drive away. If you are searching for plots for sale in Dharwad, Aurora Hills provides the perfect location that combines tranquility with accessibility.
+                    </p>
+                    <button class="btn btn-custom1 d-inline-flex align-items-center px-3 py-2">
+                        Enquire Now
+                     </button>
+        
+                </div>
+        
+                <!-- Right Image Section (Covers Full Right Side) -->
+                <div class="col-md-7 p-0 my-auto">
+                   
+                               <div class="scroll-section">
+                                    <div class="progress-container">
+                                        <div class="progress-line">
+                                            <svg viewBox="0 0 2200 200">
+                                                <path d="M 50,100 Q 450,20 900,100 T 1800,100" stroke="#ddd" stroke-width="4" fill="transparent"/>
+                                                <path class="progress-path" d="M 50,100 Q 450,20 900,100 T 1800,100" stroke-width="4" fill="transparent"/>
+                                            </svg>
+                                        </div>
+                                        <div class="image-box"><img src="images/progress/goa.png" alt="Step 1"></div>
+                                        <div class="image-box"><img src="images/progress/hubli.png" alt="Step 2"></div>
+                                        <div class="image-box"><img src="images/progress/dandeli.png" alt="Step 3"></div>
+                                        <div class="image-box"><img src="images/progress/badami.png" alt="Step 4"></div>
+                                        <div class="image-box"><img src="images/progress/jog-falls.png" alt="Step 5"></div>
+                                        <div class="image-box"><img src="images/progress/gokarna.png" alt="Step 6"></div>
+                                        <div class="image-box"><img src="images/progress/karwar.png" alt="Step 6"></div>
+                                        <div class="image-box"><img src="images/progress/hampi.png" alt="Step 6"></div>
+                                    </div>
+                                </div>
+                           
+                       
+                
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const progressPath = document.querySelector(".progress-path");
+                            const scrollSection = document.querySelector(".scroll-section");
+                            const imageBoxes = document.querySelectorAll(".image-box");
+                
+                            scrollSection.addEventListener("scroll", () => {
+                                const scrollLeft = scrollSection.scrollLeft;
+                                const maxScrollLeft = scrollSection.scrollWidth - scrollSection.clientWidth;
+                                const progress = (scrollLeft / maxScrollLeft) * 1600;
+                                progressPath.style.strokeDashoffset = Math.max(1600 - progress, 0);
+                            });
+                
+                            scrollSection.addEventListener("wheel", (event) => {
+                                event.preventDefault();
+                                scrollSection.scrollLeft += event.deltaY * 2;
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+    <section id="amenities" style="background-color: #72173e;">
+        <div class="container-fluid py-5 px-5">
+            <div class="row">
+                <!-- Left Side: 4 Boxes in 3 Rows -->
+                <div class="col-md-7 d-flex flex-column gap-3">
+                    <div class="row g-3">
+                        <!-- 12 Boxes (4 per row) -->
+                        <div class="col-md-3" >
+                         
+                                <div class="image-box1 tilt-box">
+                                 <img src="images/amenities/color/lodging1.png" class="icon1">
+                                    <span class="text">Lodging & Boarding<br>
+                                        Services</span>
+                                  </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/store1.png" class="icon1">
+                                   <span class="text">Coffee Shop &<br>
+                                    Retail Stores</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/sunset1.png" class="icon1">
+                                   <span class="text">Sunset Walking &<br>
+                                    Yoga Park</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/underground1.png" class="icon1">
+                                   <span class="text">Underground<br>
+                                    Infrastructure</span>
+                                 </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/exclusive1.png" class="icon1">
+                                   <span class="text">Exclusive Clubhouse<br>
+                                    Membership</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/gym1.png" class="icon1">
+                                   <span class="text">World Class<br>
+                                    Gymnasium</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/swimming1.png" class="icon1">
+                                   <span class="text">Infinity<br>
+                                    Swimming Pool</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/panaromic1.png" class="icon1">
+                                   <span class="text">Panoramic<br>
+                                    Sunset Views</span>
+                                 </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/tennis1.png" class="icon1">
+                                   <span class="text">Tennis<br>
+                                    Court</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/football1.png" class="icon1">
+                                   <span class="text">Football<br>
+                                    Court</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/multicusine1.png" class="icon1">
+                                   <span class="text">Multi-cuisine<br>
+                                    Restaurant</span>
+                                 </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box1 tilt-box">
+                                <img src="images/amenities/color/cctv.png" class="icon1">
+                                   <span class="text">CCTV<br>
+                                    Security</span>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Side: Logo, Headline, Paragraph, Button -->
+                <div class="col-md-5 d-flex flex-column justify-content-center align-items-end text-end">
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 mx-2 text-end sbhdln text-uppercase text-white">Luxury, Leisure,<br> Sunsets & More</p>
+                        <img src="images/white-logo.png" alt="Logo" style="max-width: 80px; height: auto;">
+                        
+                    </div>
+                    
+                    <p class="para mt-3 text-white">The Aurora Club House is designed to have world-class amenities and the residents will have exclusive membership for those seeking plots in Dharwad, or plots for sale in Dharwad. A gymnasium, pool/billiards, home theatre, swimming pool, etc., are some of the facilities that will be provided as part of the membership. A multi-cuisine restaurant and a lodging facility will also be included. This makes this an attractive choice for those looking for plots for sale in Dharwad or a Dharwad plot for sale that offers both comfort and convenience. <a href="" class="fw-bold rdmr text-white" data-bs-toggle="modal" data-bs-target="#myModalamnts">READ MORE</a></p>
+                    <div>
+                        <button class="btn btn-custom1 d-inline-flex align-items-center px-3 py-2">
+                           Enquire Now
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section  class="galbg" id="gallery">
+<div class="container text-center mrtp">
+    <div class="d-flex justify-content-center align-items-center mb-3">
+        <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+        <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Expansive Spaces<br>
+            Elevated Lifestyle
+            </p>
+      </div>
+    
+        
+        <!-- Paragraph -->
+        <p class="para px-5">
+            Explore images showcasing the beautifully planned residential plots for those looking for a Dharwad plot for sale or plots for sale in Dharwad, the gallery offers a visual journey into what makes Aurora Hills the perfect choice. 
+        </p>
+        <button class="btn btn-custom1 d-inline-flex align-items-center px-3 py-2">
+            Enquire Now
+         </button>
+</div>
+
+<div class="container my-5" >
+
+    <!-- Bootstrap 5 Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+   
+<!-- Indicators -->
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+</div>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row g-3 gallery">
+                <!-- First row (3 images) -->
+                <div class="col-md-6">
+                    <img src="images/gallery/gal1.webp" class="img-fluid" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/gallery/gal2.jpg" class="img-fluid" alt="Gallery Image 2">
+                </div>
+                
+              
+        
+                <!-- Second row (4 images) -->
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal3.webp" class="img-fluid" alt="Gallery Image 4">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal4.webp" class="img-fluid" alt="Gallery Image 5">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal5.webp" class="img-fluid" alt="Gallery Image 6">
+                </div>
+              
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row g-3 gallery">
+                <!-- First row (3 images) -->
+                <div class="col-md-6">
+                    <img src="images/gallery/gal11.jpg" class="img-fluid" alt="Gallery Image 1">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/gallery/gal8.jpg" class="img-fluid" alt="Gallery Image 2">
+                </div>
+                
+              
+        
+                <!-- Second row (4 images) -->
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal7.jpg" class="img-fluid" alt="Gallery Image 4">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal10.jpg" class="img-fluid" alt="Gallery Image 5">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="images/gallery/gal9.jpg" class="img-fluid" alt="Gallery Image 6">
+                </div>
+              
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Custom Font Awesome Controls -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="fa-solid fa-chevron-left"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="fa-solid fa-chevron-right"></span>
+        <span class="visually-hidden">Next</span>
+    </button> -->
+</div>
+   
+</div>
+    </section>
+
+    <section class="py-5 mb-4" id="masterplan">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Curated<br> Master Plan</p>
+              </div>
+              
+                
+                <!-- Paragraph -->
+                <p class="para px-5">
+                    The master plan of Aurora Hills is thoughtfully designed to offer well-planned residential plots with wide roads, and green spaces. For those looking for a plots in Dharwad, or plots for sale in Dharwad, the layout ensures optimal land utilization while providing ample open spaces for relaxation and recreation. Each plot is strategically positioned to maximize convenience, privacy, and access to amenities. This makes The Aurora Hills the perfect choice for buyers seeking premium plots for sale in Dharwad to build their dream homes.
+                </p>
+        </div>
+
+        <div class="container my-5">
+            <!-- Centered Nav Pills -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-tab1" data-bs-toggle="pill" data-bs-target="#tab1" type="button" role="tab">MASTER PLAN</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-tab2" data-bs-toggle="pill" data-bs-target="#tab2" type="button" role="tab">30*40</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-tab3" data-bs-toggle="pill" data-bs-target="#tab3" type="button" role="tab">30*50</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-tab3" data-bs-toggle="pill" data-bs-target="#tab4" type="button" role="tab">40*60</button>
+                </li>
+            </ul>
+        
+            <!-- Tab Content with Images -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade fade show active" id="tab1" role="tabpanel">
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-4">
+                            <a href="images/masterplan/masterplan1.webp" data-fancybox="gallery3"><img src="images/masterplan/masterplan1.webp" class="img-fluid et-js-tilt" alt="Image 7"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/masterplan/masterplan2.webp" data-fancybox="gallery3"><img src="images/masterplan/masterplan2.webp" class="img-fluid  et-js-tilt" alt="Image 8"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/masterplan/masterplan3.jpg" data-fancybox="gallery3"><img src="images/masterplan/masterplan3-1.webp" class="img-fluid  et-js-tilt" alt="Image 9"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2" role="tabpanel">
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/30-40/3.webp" data-fancybox="gallery1"><img src="images/30-40/3.webp" class="img-fluid  et-js-tilt" alt="Image 1"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/30-40/4.webp" data-fancybox="gallery1"><img src="images/30-40/4.webp" class="img-fluid  et-js-tilt" alt="Image 2"></a>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tab-pane fade" id="tab3" role="tabpanel">
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/30-50/1.webp" data-fancybox="gallery2"><img src="images/30-50/1.webp" class="img-fluid  et-js-tilt" alt="Image 4"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/30-50/2.webp" data-fancybox="gallery2"><img src="images/30-50/2.webp" class="img-fluid  et-js-tilt" alt="Image 5"></a>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel">
+                    <div class="row g-3 mt-3">
+                        <div class="col-md-2">
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/40-60/1.webp" data-fancybox="gallery2"><img src="images/40-60/1.webp" class="img-fluid  et-js-tilt" alt="Image 4"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="images/40-60/2.webp" data-fancybox="gallery2"><img src="images/40-60/2.webp" class="img-fluid  et-js-tilt" alt="Image 5"></a>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                </div>
+        
+ 
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #72173e;" class="py-5">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="images/white-logo.png" alt="Logo" style="max-width: 80px; height: auto;">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase text-white">Happening<br> Location</p>
+              </div>
+               
+                
+                <!-- Paragraph -->
+                <p class="para px-5 text-white">
+                    Looking for a High-end Lifestyle at the Heart of Dharwad? Presenting lush plots in Dharwad for the exceptional living experience. Plots for sale in Dharwad will benefit from easy access to hospitals, schools, colleges, and employment opportunities. The township is strategically located along the National Highway, ensuring quick connectivity to neighboring cities and popular holiday destinations, making it ideal for those looking for convenient and well-connected plots for sale in Dharwad.
+                </p>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <img src="images/map.webp" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/layer-1.webp"  class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Never-like-before<br>
+                    Pricing</p>
+              </div>
+               
+                
+                <!-- Paragraph -->
+                <p class="para px-5">
+                    Residents seeking a Dharwad plot for sale, plots in Dharwad, or plots for sale in Dharwad will benefit from easy access to hospitals, schools, colleges, and employment opportunities. The township is strategically located along the National Highway, ensuring quick connectivity to neighboring cities and popular holiday destinations, making it ideal for those looking for convenient and well-connected plots for sale in Dharwad.
+                </p>
+        </div>
+
+        <div class="container my-5">
+            <!-- Centered Nav Pills -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-tab1" data-bs-toggle="pill" data-bs-target="#tab5" type="button" role="tab">Residential Plots</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-tab2" data-bs-toggle="pill" data-bs-target="#tab6" type="button" role="tab">Duplex Modern Villas</button>
+                </li>
+                
+            </ul>
+        
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade fade show active" id="tab5" role="tabpanel">
+                    <div class="container py-4">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>PLOTS</th>
+                                    <th>AREA</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="opacity: 1;">
+                                    <td>30ft x 40ft </td>
+                                    <td>1200 sq ft.</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>30ft x 50f</td>
+                                    <td>1500 sq ft.</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>40ft x 60ft</td>
+                                    <td>2400 sq ft.</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Odd Dimensions</td>
+                                    <td>1200 sq ft. Onwards</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <CENTER>
+                        <button class="btn btn-custom1 d-inline-flex align-items-center mt-4">
+                            Enquire Now
+                         </button>
+                        </CENTER>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab6" role="tabpanel">
+                    <div class="container py-5">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>PLOTS</th>
+                                    <th>AREA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="opacity: 1;">
+                                    <td>3 BHK</td>
+                                    <td>1600 sq ft Onwards* </td>
+                                 
+                                </tr>
+                                <tr>
+                                    <td>4 BHK</td>
+                                    <td>2000 sq ft Onwards* </td>
+                                    
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                        <CENTER>
+                            <button class="btn btn-custom1 d-inline-flex align-items-center mt-4">
+                                Enquire Now
+                             </button>
+                            </CENTER>
+                    </div>
+                </div>
+        
+              
+        
+ 
+            </div>
+           
+                
+        
+                
+        
+ 
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contactus">
+        <div class="container-fluid ps-md-4 ps-lg-5">
+            <div class="row">
+                
+              
+                <!-- <div class="col-md-5 d-flex flex-column justify-content-center align-items-start px-3">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/logo-img.png" alt="Logo" style="max-width: 80px; height: auto;">
+                        <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Get in touch</p>
+                    </div>
+        
+                  
+                    <p class="para">
+                        Residents seeking a Dharwad plot for sale, plots in Dharwad, or plots for sale in Dharwad will benefit from easy access to hospitals, schools, colleges, and employment opportunities. The township is strategically located along the National Highway, ensuring quick connectivity to neighboring cities and popular holiday destinations, making it ideal for those looking for convenient and well-connected plots for sale in Dharwad.
+                    </p>
+        
+                </div> -->
+        
+                <!-- Right Image Section (Covers Full Right Side) -->
+                <div class="col-md-12 px-5">
+                   
+                    <div class="container contact-container">
+                        <div class="row">
+                            <!-- Left Column: Contact Info -->
+                            <div class="col-md-6 contact-info">
+                                <div class="contact-info-content">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="images/white-logo.png" alt="Logo" style="max-width: 80px; height: auto;">
+                                        <p class="mb-0 ms-2 text-start sbhdln text-uppercase text-white">Get in<br> touch</p>
+                                    </div>
+                                    <p><i class="fas fa-map-marker-alt"></i><span>Sunset View Point, Karnataka University Dharwad,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dharwad 580006</span></p>
+                                    <p><i class="fas fa-phone"></i><a href="tel:+91 73383 86999" class="whthrf">+91 73383 86999</a></p>
+                                    <p><i class="fas fa-envelope"></i><a href="mailto:sales@theaurorahills.com" class="whthrf"> sales@theaurorahills.com</a></p>
+                    
+                                    <!-- Social Icons -->
+                                    <!-- <div class="social-icons mt-3">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                    
+                            <!-- Right Column: Contact Form -->
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                  
+                                    <form>
+                                        <div class="mb-3">
+                                       
+                                            <input type="text" class="form-control custom-input" id="name" placeholder="Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            
+                                            <input type="email" class="form-control custom-input" id="email" placeholder="Email id" required>
+                                        </div>
+                                        <div class="mb-3">
+                                          
+                                            <input type="tel" class="form-control custom-input" id="phone" placeholder="Phone Number" required>
+                                        </div>
+                                        <div class="mb-3">
+                                          
+                                            <select class="form-select custom-input" id="property">
+                                                <option value="">Select Property Preference</option>
+                                                <option value="property1">Property 1</option>
+                                                <option value="property2">Property 2</option>
+                                                <option value="property3">Property 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                         
+                                            <textarea class="form-control custom-input" id="message" rows="1" placeholder="Message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-custom1 w-25">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- First Column: Logo -->
+                <div class="col-md-2 text-center text-md-start">
+                    <img src="images/white-main-loog.png" alt="Logo" class="footer-logo">
+                </div>
+    
+                <!-- Second Column: Text Links -->
+                <div class="col-md-8 text-center">
+                   <p class="text-white" style="font-size:14px;">
+                    Disclaimer:- Project approved by Hubballi Dharwad Urban Development Authority. Any content mentioned on this website is for information purposes only and prices are subject to change without notice. this website is just for the purpose of information only and not to be considered as an official website.
+                   </p>
+                </div>
+    
+                <!-- Third Column: Social Icons -->
+                <div class="col-md-2 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content mdl-cnt">
+
+                <div class="modal-body mdl-bdy">
+                    <button type="button" class="btn-close custom-close-btn position-absolute top-0 end-0 m-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row g-0">
+                        <div class="col-md-6 left-column">
+                            <img src="images/pfm-img.png" alt="Villa Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 right-column">
+                            <h5>3 & 4 BHK Duplex Villa & Residential Plots Starts at</h5>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <img src="images/one1.png" alt=""><span>A Never Before Experience</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="images/two1.png" alt=""><span>Convenient Location</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="images/one2.png" alt=""><span>Integrated Township</span>
+                                </div>
+                                <div class="feature-item">
+                                    <img src="images/two2.png" alt=""><span>Exclusive Amenities</span>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="text" class="form-control mb-2 mt-3" placeholder="Name">
+                                <input type="email" class="form-control mb-3" placeholder="Email ID">
+                                <input type="tel" class="form-control mb-3" placeholder="Phone Number">
+                                <select class="form-select mb-2">
+                                    <option selected disabled>Select Property Preference</option>
+                                    <option>3 BHK Villa</option>
+                                    <option>4 BHK Villa</option>
+                                    <option>Residential Plot</option>
+                                    <option>Other</option>
+                                </select>
+                                <textarea class="form-control txtare mb-2" placeholder="Message"></textarea>
+                                <button type="submit" class="btn  btn-custom1 w-25 float-end">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+<div class="modal fade" id="myModalabt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex justify-content-center align-items-center mb-2">
+                <img src="images/logo-img.png" alt="Logo" class="img-fluid">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Made for<br> Moments<br> That Matter</p>
+              </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Situated in the heart of Dharwad city, Aurora Hills is one of the premium township destinations for anyone looking to own a dream home in Dharwad. If you are searching for a plot for sale in Hubli Dharwad or property for sale in Dharwad, Aurora Hills offers the ideal choice. Situated along the National Highway NH-4, the strategic location of this township provides convenient and quick access to Hubli-Dharwad Twin Smart City. This makes it a prime destination for those looking for plots for sale in Dharwad or Hubli plots for sale.</p>
+          <p>Close proximity to major educational institutions, hospitals, manufacturing units, and IT parks, as well as quick connectivity to railway stations, airports, and bus stands, make this township a perfect residence for all types of families. Whether you are searching for villa plots for sale in Dharwad or exploring options for plots for sale in Hubli, Aurora Hills caters to diverse needs with its well-planned offerings. </p>
+          <p>Aurora Hills has incorporated smart city engineering by providing a well-planned layout of the plots with wide roads and underground infrastructure. For those seeking plots for sale in Dharwad or plots in Dharwad with top-notch amenities, Aurora Hills delivers gardens & parks, jogging tracks, kids' park & play area, along with a state-of-the-art clubhouse. This landmark development stands out as a premier choice for individuals looking for plots for sale in Hubli, villas plots for sale in Dharwad, or any property for sale in Dharwad.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal Structure -->
+<div class="modal fade" id="myModalamnts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex justify-content-center align-items-center mb-2">
+                <img src="images/logo-img.png" alt="Logo" class="img-fluid">
+                <p class="mb-0 ms-2 text-start sbhdln text-uppercase">Luxury, Leisure, Sunsets & More</p>
+              </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>The Aurora Club House is designed to have world-class amenities and the residents will have exclusive membership for those seeking plots in Dharwad, or plots for sale in Dharwad. A gymnasium, pool/billiards, home theatre, swimming pool, etc., are some of the facilities that will be provided as part of the membership. A multi-cuisine restaurant and a lodging facility will also be included. This makes this an attractive choice for those looking for plots for sale in Dharwad or a Dharwad plot for sale that offers both comfort and convenience.</p>
+          <p>Aurora Hills is a township designed to keep up with the modern lifestyle needs along with a fine blend of nature. For buyers interested in plots in Dharwad or plots for sale in Dharwad, the development offers thoughtfully planned infrastructure. Every street is designed with a walking/jogging track along with well-designed landscaping using different types of planted trees. Spacious parks are created for residents with areas designated for fitness, relaxation, yoga, sports, etc.</p>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <script>
+        var divisor = document.getElementById("divisor"),
+            handle = document.getElementById("handle"),
+            slider = document.getElementById("slider");
+
+        function moveDivisor() {
+            handle.style.left = slider.value + "%";
+            divisor.style.width = slider.value + "%";
+        }
+
+        window.onload = function () {
+            moveDivisor();
+        };
+    </script>
+
+
+<script>
+    const boxes = document.querySelectorAll(".tilt-box");
+
+    boxes.forEach((box) => {
+        let xRotation = 0, yRotation = 0;
+        let shakeInterval;
+
+        box.addEventListener("mouseenter", () => {
+            // Start small shaking effect
+            shakeInterval = setInterval(() => {
+                const randomX = (Math.random() - 0.5) * 6; // Random tilt between -3 to 3 degrees
+                const randomY = (Math.random() - 0.5) * 6;
+                box.style.transform = `rotateX(${randomX}deg) rotateY(${randomY}deg)`;
+            }, 100);
+        });
+
+        box.addEventListener("mousemove", (e) => {
+            clearInterval(shakeInterval); // Stop shaking when mouse moves
+            const { left, top, width, height } = box.getBoundingClientRect();
+            const x = ((e.clientX - left) / width - 0.5) * 40; // Tilt range: ±20 degrees
+            const y = ((e.clientY - top) / height - 0.5) * 40; // Tilt range: ±20 degrees
+            
+            xRotation = -y;
+            yRotation = x;
+
+            requestAnimationFrame(() => {
+                box.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+            });
+        });
+
+        box.addEventListener("mouseleave", () => {
+            clearInterval(shakeInterval); // Stop shaking effect
+            requestAnimationFrame(() => {
+                box.style.transform = "rotateX(0deg) rotateY(0deg)";
+            });
+        });
+    });
+</script>
+
+
+<script>
+  jQuery(document).ready(function ($) {
+  $(".et-js-tilt").tilt({
+    glare: true,
+    maxGlare: 0.7,
+    scale: 1.1,
+    perspective: 300
+  });
+
+  $(".et-row-js-tilt").tilt({
+    scale: 1,
+    perspective: 1200
+  });
+
+  const columnTilt3d = $(".et-column-js-tilt-3d").tilt({
+    scale: 1.1,
+    perspective: 1000
+  });
+  columnTilt3d.on("tilt.mouseEnter", function (e) {
+    $(e.target).addClass("tilt-active");
+  });
+  columnTilt3d.on("tilt.mouseLeave", function (e) {
+    $(e.target).removeClass("tilt-active");
+  });
+});
+
+
+</script>
+
+
+
+</body>
+</html>
